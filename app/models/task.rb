@@ -1,4 +1,3 @@
-reqire_relative '../models/task.rb'
 require 'sqlite3'
 
 class Task
