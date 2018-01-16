@@ -42,4 +42,9 @@ class Task
                       task_params[:description],
                       id)
   end
+
+  def self.destroy(id)
+    database.execute("DELETE FROM tasks
+                      WHERE id = ?", id)
+  end
 end
